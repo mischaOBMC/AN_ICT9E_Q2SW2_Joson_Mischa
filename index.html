@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotics Club Registration Form</title>
+  <style>
+    body{
+      background-image: url(BG.jpg);
+    }
+    .container{
+      background-color: black;
+      padding: 20px;
+      margin-bottom: 50px;
+      color: white;
+      opacity: 85%;
+    }
+  </style>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="content-wrapper">
+    <div class="container mt-5">
+      <div class="form-container">
+        <h1 class="text-center mb-4">Robotics Club Registration Form</h1>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="age">Age</label>
+              <input type="number" class="form-control" id="age">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="phone">Phone Number</label>
+              <input type="telephone" class="form-control" id="phone">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Preferred Robotics Topics</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="programming" value="Programming">
+              <label class="form-check-label" for="programming">Programming</label>
+            </div>
+            <br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="electronics" value="Electronics">
+              <label class="form-check-label" for="electronics">Electronics</label>
+            </div>
+            <br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="mechanicalDesign" value="Mechanical Design">
+              <label class="form-check-label" for="mechanicalDesign">Mechanical Design</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Robotics Experience Level</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="experienceLevel" id="beginner" value="Beginner">
+              <label class="form-check-label" for="beginner">Beginner</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="experienceLevel" id="intermediate" value="Intermediate">
+              <label class="form-check-label" for="intermediate">Intermediate</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="experienceLevel" id="advanced" value="Advanced">
+              <label class="form-check-label" for="advanced">Advanced</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="project">Preferred Robotics Project</label>
+            <select class="form-control" id="project">
+              <option selected>Choose a project...</option>
+              <option value="Robot glitch">Pick and Place Robot</option>
+              <option value="Robot talking">Obstacle Avoidance Robot</option>
+              <option value="Robotic Arm">Robotics Arm</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="interest">Statement of Interest</label>
+            <textarea class="form-control" id="interest" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
